@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PaperD">
+  <DataContextMoniker Name="/PaperDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ce952fc2-c8ca-49cc-bb1c-dd3879811333" absoluteBounds="0.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/PaperDDataContext/ProdReview" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2ba5c48-0e7c-4e23-b0ac-31d0f9ce0cf1" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5d38532-64db-4bd6-a7e1-0b5c8aecc131" absoluteBounds="3.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/PaperDDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc105d5b-992d-45f5-be27-864c3111682b" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0b42839-5e49-46cc-9153-b56a348ddb69" absoluteBounds="0.75, 4.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/PaperDDataContext/SysUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="775c2c53-0f8b-48a6-884c-cc93e0e0b56e" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,14 @@
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\bin\PaperD_Service.dll.config
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\bin\PaperD_Service.dll
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\bin\PaperD_Service.pdb
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.csproj.AssemblyReference.cache
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.csproj.CoreCompileInputs.cache
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.dll
+C:\Users\Temp\Desktop\2022_PaperB\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.pdb
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\bin\PaperD_Service.dll.config
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\bin\PaperD_Service.dll
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\bin\PaperD_Service.pdb
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.dll
+C:\Users\User\Downloads\PaperD_Service\PaperD_Service\PaperD_Service\obj\Debug\PaperD_Service.pdb

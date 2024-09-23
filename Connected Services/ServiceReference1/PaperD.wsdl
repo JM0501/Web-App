@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PaperD" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61320/PaperD.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61320/PaperD.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61320/PaperD.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PaperD_Service" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPaperD_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_getProductsByStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProductsByStatus" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_getProductsByStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProductsByStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_GetProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_GetProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_addProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:addProduct" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_addProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_addReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:addReview" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_addReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_EditReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditReview" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_EditReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_retrievReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:retrievReview" />
+  </wsdl:message>
+  <wsdl:message name="IPaperD_retrievReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:retrievReviewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPaperD">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/Login" message="tns:IPaperD_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/LoginResponse" message="tns:IPaperD_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/RegisterUser" message="tns:IPaperD_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/RegisterUserResponse" message="tns:IPaperD_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductsByStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/getProductsByStatus" message="tns:IPaperD_getProductsByStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/getProductsByStatusResponse" message="tns:IPaperD_getProductsByStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/GetProduct" message="tns:IPaperD_GetProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/GetProductResponse" message="tns:IPaperD_GetProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/addProduct" message="tns:IPaperD_addProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/addProductResponse" message="tns:IPaperD_addProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/addReview" message="tns:IPaperD_addReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/addReviewResponse" message="tns:IPaperD_addReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/EditReview" message="tns:IPaperD_EditReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/EditReviewResponse" message="tns:IPaperD_EditReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaperD/retrievReview" message="tns:IPaperD_retrievReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaperD/retrievReviewResponse" message="tns:IPaperD_retrievReview_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPaperD" type="tns:IPaperD">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductsByStatus">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/getProductsByStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addProduct">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/addProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addReview">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/addReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditReview">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/EditReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrievReview">
+      <soap:operation soapAction="http://tempuri.org/IPaperD/retrievReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaperD">
+    <wsdl:port name="BasicHttpBinding_IPaperD" binding="tns:BasicHttpBinding_IPaperD">
+      <soap:address location="http://localhost:61320/PaperD.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

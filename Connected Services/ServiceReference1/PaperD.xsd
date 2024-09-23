@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PaperD_Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PaperD_Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SysUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistrationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysUser" nillable="true" type="tns:SysUser" />
+  <xs:complexType name="ArrayOfProduct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProduct" nillable="true" type="tns:ArrayOfProduct" />
+  <xs:complexType name="Product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProdCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProdDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProdDiscountPrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProdId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProdImg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProdName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProdPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProdQuantity" type="xs:int" />
+      <xs:element minOccurs="0" name="ProdStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Product" nillable="true" type="tns:Product" />
+  <xs:complexType name="ProdReview">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProdId" type="xs:int" />
+      <xs:element minOccurs="0" name="RevDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RevId" type="xs:int" />
+      <xs:element minOccurs="0" name="RevStars" type="xs:int" />
+      <xs:element minOccurs="0" name="Review" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProdReview" nillable="true" type="tns:ProdReview" />
+</xs:schema>
